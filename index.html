@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Loading...</title>
-  <style>
+<meta charset="UTF-8">
+<title>Loading Prize...</title>
+<style>
     body {
-      background: #0d0d0d;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
+        background: #000;
+        color: #0f0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 20%;
+        font-size: 24px;
     }
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #00ffcc;
-      border-radius: 50%;
-      width: 70px;
-      height: 70px;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
+    #video {
+        display: none;
+        padding-top: 0;
     }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .text {
-      font-size: 18px;
-      opacity: 0.8;
-    }
-  </style>
-  <meta http-equiv="refresh" content="2.3; URL='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
+</style>
 </head>
 <body>
-  <div class="loader"></div>
-  <div class="text">Loading, please wait...</div>
+
+<div id="loading">Loading your reward... <br><br> Please wait...</div>
+
+<div id="video">
+    <iframe width="100%" height="100%" style="position:absolute; top:0; left:0; border:0;"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+        allow="autoplay; encrypted-media">
+    </iframe>
+</div>
+
+<script>
+    setTimeout(() => {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('video').style.display = 'block';
+    }, 3000);
+</script>
+
 </body>
 </html>
