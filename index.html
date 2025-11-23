@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .loader {
+      border: 8px solid #333;
+      border-top: 8px solid #00ffcc;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .text {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+  </style>
+  <meta http-equiv="refresh" content="2.3; URL='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
+</head>
+<body>
+  <div class="loader"></div>
+  <div class="text">Loading, please wait...</div>
+</body>
+</html>
